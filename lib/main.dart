@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'homeLayout.dart';
+import 'notification_service.dart';
 
-void main() {
+void main() async {
+  final notificationService = NotificationService();
+  WidgetsFlutterBinding.ensureInitialized();
+  await notificationService.init();
   runApp(const MainApp());
 }
 
@@ -11,7 +15,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(primaryColor: Colors.amber),
+      theme: ThemeData(scaffoldBackgroundColor: const Color(0xFFF0F0F0)),
       home: const HomePageLayout(),
     );
   }
