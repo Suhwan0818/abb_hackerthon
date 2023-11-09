@@ -35,27 +35,18 @@ class _customGoogleMapState extends State<customGoogleMap> {
 
   @override
   Widget build(BuildContext context) {
-    return _currentPosition == null
-        ? const SizedBox(
-            width: 375,
-            height: 400,
-            child: GoogleMap(
-              initialCameraPosition: CameraPosition(
-                  target: LatLng(35.8714354, 128.601445), zoom: 11),
-              mapType: MapType.normal,
-              myLocationEnabled: true,
-              myLocationButtonEnabled: true,
-            ),
-          )
-        : SizedBox(
-            width: 375,
-            height: 400,
-            child: GoogleMap(
-              initialCameraPosition:
-                  CameraPosition(target: _currentPosition, zoom: 11),
-              mapType: MapType.normal,
-              markers: _marker,
-            ),
-          );
+    return Padding(
+      padding: EdgeInsets.symmetric(vertical: 20), // 위 아래로 10의 패딩 적용
+      child: SizedBox(
+        width: 375,
+        height: 400,
+        child: GoogleMap(
+          initialCameraPosition:
+              CameraPosition(target: _currentPosition, zoom: 14),
+          mapType: MapType.normal,
+          markers: _marker,
+        ),
+      ),
+    );
   }
 }

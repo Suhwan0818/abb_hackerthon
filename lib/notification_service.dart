@@ -23,14 +23,14 @@ class NotificationService {
     const int notificationId = 0;
 
     final AndroidNotificationDetails androidNotificationDetails =
-        AndroidNotificationDetails('재난 알림', '재난 알림',
-            channelDescription: '본 내용은 재난 위험 상황에 알람을 울립니다.',
+        AndroidNotificationDetails('나만 아는 명소', '나만 아는 명소',
+            channelDescription: '지금 원활한 관광지를 추천해드립니다.',
             importance: Importance.high);
     final NotificationDetails notificationDetails =
         NotificationDetails(android: androidNotificationDetails);
 
-    await flutterLocalNotificationsPlugin.show(notificationId, '재난 알림',
-        '현재 "대구 중구" 지역은 "가뭄"으로 인한 위험 지역입니다!', notificationDetails);
+    await flutterLocalNotificationsPlugin.show(notificationId, '나만 아는 명소',
+        '현재 "대구 중구" 지역은 "대구 리시트"가 원활합니다!', notificationDetails);
   }
 
   Future<PermissionStatus> requestNotificationPermissions() async {
