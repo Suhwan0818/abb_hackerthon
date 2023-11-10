@@ -30,7 +30,7 @@ class NotificationService {
         NotificationDetails(android: androidNotificationDetails);
 
     await flutterLocalNotificationsPlugin.show(notificationId, '나만 아는 명소',
-        '현재 "대구 중구" 지역은 "대구 리시트"가 원활합니다!', notificationDetails);
+        '현재 "서울 중구" 지역은 "국립한글박물관"가 원활합니다!', notificationDetails);
   }
 
   Future<PermissionStatus> requestNotificationPermissions() async {

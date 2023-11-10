@@ -1,0 +1,156 @@
+[
+  {
+    "latitude": 37.523919,
+    "longitude": 126.979977,
+    "name": "국립중앙박물관",
+    "type": "박물관",
+    "perce": 29
+  },
+  {
+    "latitude": 37.537926,
+    "longitude": 126.999506,
+    "name": "리움미술관",
+    "type": "미술관",
+    "perce": 26
+  },
+  {
+    "latitude": 37.527785,
+    "longitude": 126.981661,
+    "name": "용산공원",
+    "type": "공원",
+    "perce": 27
+  },
+  {
+    "latitude": 37.521017,
+    "longitude": 126.981018,
+    "name": "국립한글박물관",
+    "type": "박물관",
+    "perce": 30
+  },
+  {
+    "latitude": 37.562385,
+    "longitude": 126.974438,
+    "name": "진주회관",
+    "type": "음식점",
+    "perce": 8
+  },
+  {
+    "latitude": 37.565697,
+    "longitude": 127.005631,
+    "name": "스타 사마르칸트",
+    "type": "음식점",
+    "perce": 2
+  },
+  {
+    "latitude": 37.570486,
+    "longitude": 127.00152,
+    "name": "광장 누룽지 닭강정",
+    "type": "음식점",
+    "perce": 0
+  },
+  {
+    "latitude": 37.533472,
+    "longitude": 126.994496,
+    "name": "꾸띠자르당",
+    "type": "음식점",
+    "perce": 3
+  },
+  {
+    "latitude": 37.531578,
+    "longitude": 126.972178,
+    "name": "쌤쌤쌤",
+    "type": "음식점",
+    "perce": 3
+  },
+  {
+    "latitude": 37.53385,
+    "longitude": 126.990915,
+    "name": "플러스84",
+    "type": "음식점",
+    "perce": 2
+  },
+  {
+    "latitude": 37.531382,
+    "longitude": 126.972399,
+    "name": "골든볼",
+    "type": "카페",
+    "perce": 12
+  },
+  {
+    "latitude": 37.520058,
+    "longitude": 126.985247,
+    "name": "용산가족공원",
+    "type": "공원",
+    "perce": 30
+  },
+  {
+    "latitude": 37.544054,
+    "longitude": 126.970287,
+    "name": "한입소반",
+    "type": "음식점",
+    "perce": 9
+  },
+  {
+    "latitude": 37.532515,
+    "longitude": 126.973678,
+    "name": "서울앵무새",
+    "type": "카페",
+    "perce": 13
+  },
+  {
+    "latitude": 37.531878,
+    "longitude": 126.972744,
+    "name": "도토리",
+    "type": "카페",
+    "perce": 11
+  },
+  {
+    "latitude": 37.544716,
+    "longitude": 126.985559,
+    "name": "쉘터",
+    "type": "카페",
+    "perce": 15
+  },
+  {
+    "latitude": 37.531516,
+    "longitude": 126.971126,
+    "name": "꺼거",
+    "type": "음식점",
+    "perce": 1
+  },
+  {
+    "latitude": 37.535671,
+    "longitude": 126.999563,
+    "name": "이태리국시",
+    "type": "음식점",
+    "perce": 0
+  },
+  {
+    "latitude": 37.534755,
+    "longitude": 126.992785,
+    "name": "야상해",
+    "type": "음식점",
+    "perce": 0
+  },
+  {
+    "latitude": 37.543483,
+    "longitude": 126.987717,
+    "name": "곰모아",
+    "type": "음식점",
+    "perce": 2
+  },
+  {
+    "latitude": 37.544821,
+    "longitude": 126.98474,
+    "name": "르몽블랑",
+    "type": "음식점",
+    "perce": 2
+  },
+  {
+    "latitude": 37.524234,
+    "longitude": 127.00181,
+    "name": "코끼리베이글",
+    "type": "카페",
+    "perce": 2
+  }
+]

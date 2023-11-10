@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +14,7 @@ class Carousel extends StatelessWidget {
           builder: (BuildContext context) {
             return Container(
               width: MediaQuery.of(context).size.width,
-              margin: EdgeInsets.symmetric(horizontal: 5.0),
+              margin: const EdgeInsets.symmetric(horizontal: 5.0),
               decoration: BoxDecoration(
                 color: Colors.amber,
                 borderRadius: BorderRadius.circular(10),
@@ -21,7 +23,7 @@ class Carousel extends StatelessWidget {
                     color: Colors.grey.withOpacity(0.5),
                     spreadRadius: 5,
                     blurRadius: 7,
-                    offset: Offset(0, 3),
+                    offset: const Offset(0, 3),
                   ),
                 ],
               ),
@@ -43,7 +45,7 @@ class Carousel extends StatelessWidget {
         aspectRatio: 16 / 9,
         autoPlayCurve: Curves.fastOutSlowIn,
         enableInfiniteScroll: true,
-        autoPlayAnimationDuration: Duration(milliseconds: 800),
+        autoPlayAnimationDuration: const Duration(milliseconds: 800),
         viewportFraction: 0.8,
       ),
     );

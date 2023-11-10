@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 import 'package:abb_hackerthon/listPageLayout.dart';
 import 'package:flutter/material.dart';
 
@@ -23,7 +25,7 @@ class MenuWidget extends StatelessWidget {
                         color: Colors.grey.withOpacity(0.1),
                         spreadRadius: 5,
                         blurRadius: 7,
-                        offset: Offset(0, 3))
+                        offset: const Offset(0, 3))
                   ]),
               child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -41,14 +43,14 @@ class MenuWidget extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => NewScreen()),
+                MaterialPageRoute(builder: (context) => const NewScreen()),
               );
             },
             child: Container(
               width: MediaQuery.of(context).size.width,
               height: 35,
               margin: const EdgeInsets.only(left: 0),
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Color(0xFFFaFaFa),
               ),
               child: const Column(

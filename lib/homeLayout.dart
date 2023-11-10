@@ -1,9 +1,9 @@
-// ignore_for_file: file_names
+// ignore_for_file: file_names, library_private_types_in_public_api, unused_element, avoid_unnecessary_containers
 import 'dart:async';
+import 'package:abb_hackerthon/MBTISettingLayout.dart';
 import 'package:abb_hackerthon/notification_service.dart';
 import 'package:flutter/material.dart';
 import 'package:geocoding/geocoding.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'googleMap.dart';
 import 'carouselLayout.dart';
@@ -22,9 +22,22 @@ class HomePageLayout extends StatelessWidget {
             '나만 아는 명소',
             style: TextStyle(fontWeight: FontWeight.bold, color: Colors.amber),
           ),
-          actions: const <Widget>[AlertState()],
+          actions: <Widget>[
+            IconButton(
+              icon: const Icon(Icons.settings), // 아이콘 설정
+              onPressed: () {
+                // 버튼을 눌렀을 때의 동작 정의
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => MBTISetting()), // 이동할 화면 설정
+                );
+              },
+            ),
+            const AlertState(),
+          ],
         ),
-        body: SingleChildScrollView(
+        body: const SingleChildScrollView(
           child: Center(
             child: Column(children: <Widget>[
               Carousel(),
@@ -60,10 +73,6 @@ class _NowLocationState extends State<NowLocation> {
   }
 
   _getCurrentLocation() async {
-    Position position = await Geolocator.getCurrentPosition(
-        desiredAccuracy: LocationAccuracy.high);
-    String? locationName =
-        await _getLocationName(position.latitude, position.longitude);
     setState(() {});
   }
 
@@ -96,7 +105,7 @@ class _NowLocationState extends State<NowLocation> {
             SizedBox(
               width: 5,
             ),
-            Text('현재 위치 = 대구 중구'),
+            Text('현재 위치 = 서울 중구'),
           ],
         ),
       ),
@@ -177,7 +186,7 @@ class WeatherAndAlert extends StatelessWidget {
                     children: [
                       Icon(Icons.local_cafe_rounded,
                           color: Colors.brown), // 원하는 아이콘을 선택하세요.
-                      Text('대구 리시트'),
+                      Text('국립한글박물관'),
                     ],
                   ),
                 ),

@@ -1,4 +1,5 @@
-import 'package:abb_hackerthon/homeLayout.dart';
+// ignore_for_file: file_names
+
 import 'package:flutter/material.dart';
 
 class ListMenuWidget extends StatelessWidget {
@@ -19,7 +20,7 @@ class ListMenuWidget extends StatelessWidget {
                 width: MediaQuery.of(context).size.width,
                 height: 35,
                 margin: const EdgeInsets.only(right: 0),
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color(0xFFFaFaFa),
                 ),
                 child: const Column(
@@ -49,7 +50,7 @@ class ListMenuWidget extends StatelessWidget {
                         color: Colors.grey.withOpacity(0.1),
                         spreadRadius: 5,
                         blurRadius: 7,
-                        offset: Offset(0, 3))
+                        offset: const Offset(0, 3))
                   ]),
               child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
