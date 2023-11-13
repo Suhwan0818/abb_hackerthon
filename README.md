@@ -27,6 +27,10 @@ AI 빅데이터 개발톤
 
 ## 기능 별 배운점
 
+### 완성본
+
+![complete_file](/assets/complete_file.gif)
+
 ### API 처리
 
 - flutter에서의 http처리는 웹과 별 차이 없지만 인터넷 없이도 접속 가능한 상황을 예외처리할 필요가 있음
@@ -36,3 +40,15 @@ AI 빅데이터 개발톤
 
 - 기존 웹과 완전히 다른 Widget 개념 Material UI가 대표적인 아이콘을 제공해 추가적인 라이브러리를 크게 설치하지 않아도 다양한 활용가능
 - Android를 설계했음에도 IOS역시 지원하는 형태에 대한 궁금점이 생겨 공부할 필요성이 있음
+
+### 전날 대비 인원
+
+- 오늘 시간 호출 인원 / 어제자 같은 시간 호출 인원을 퍼센트로 도출 코드는 다음과 같다
+
+```dart
+SharedPreferences prefs = await SharedPreferences.getInstance();
+int yesterdayPeople = prefs.getInt('current_people') ?? 0;
+int currentPeople = await fetchCurrentPeople('37.5665', '126.9780');
+print('오늘의 인원: $currentPeople, 어제의 인원: $yesterdayPeople, 차이: ${currentPeople - yesterdayPeople}');
+await prefs.setInt('current_people', currentPeople);
+```
