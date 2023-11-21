@@ -17,7 +17,7 @@ AI 빅데이터 개발톤
         <td align="center";><a href="https://github.com/Suhwan0818"><img src="https://avatars.githubusercontent.com/u/70519298?v=4" width="100px;" alt=""/><br /><sub><b>류준형 (팀장 & 설계)</b></sub></a><br /></td>
         <td align="center";><a href="https://github.com/Suhwan0818"><img src="https://avatars.githubusercontent.com/u/48269420?v=4" width="100px;" alt=""/><br /><sub><b>김수환 (프론트엔드)</b></sub></a><br /></td>
         <td align="center";><a href="https://github.com/Suhwan0818"><img src="https://avatars.githubusercontent.com/u/70519352?v=4" width="100px;" alt=""/><br /><sub><b>김건호 (백엔드)</b></sub></a><br /></td>
-        <td align="center";><a href="https://github.com/LouisKimDev/abb_hackerthon_django"><img src="https://avatars.githubusercontent.com/u/112796891?v=4" width="100px;" alt=""/><br /><sub><b>김건호 (백엔드)</b></sub></a><br /></td>
+        <td align="center";><a href="https://github.com/LouisKimDev/abb_hackerthon_django"><img src="https://avatars.githubusercontent.com/u/112796891?v=4" width="100px;" alt=""/><br /><sub><b>김도윤 (백엔드)</b></sub></a><br /></td>
     </tbody>
 </table>
 
